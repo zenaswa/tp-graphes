@@ -1,0 +1,14 @@
+graph {
+node [shape="star" style="filled" fillcolor="aqua"];
+edge [fontsize="20pt" color="red"];
+G [shape="box"];
+G [pos="2,6!"];
+H [pos="4,8!"];
+B [pos="7,8!"];
+G -- H [label="14"];
+B -- G [label="4"];
+B -- A [label="1"];
+B -- H [label="2"];
+A -- C [label="4"];
+B -- C [label="2"];
+}
