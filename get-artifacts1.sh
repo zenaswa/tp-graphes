@@ -1,5 +1,8 @@
+tok=$(cat token.gh)
 curl -L \
--H "..." \
--H "..." \
--H "..." \
-https://api.github.com/repos/zenaswa/tp-graphes/actions/artifacts
+	-H "Accept: application/vnd.github+json" \
+	-H "Authorization: Bearer $tok" \
+	-H "X-GitHub-Api-Version: 2026-03-10" \
+	https://api.github.com/repos/zenaswa/tp-graphes/actions/artifacts \
+	 > gh-artifacts.json
+
